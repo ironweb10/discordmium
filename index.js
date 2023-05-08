@@ -6,7 +6,7 @@ const Eris = require('eris');
 /** BLACKLIST: CHANGE, ADD OR REMOVE KEYWORDS HERE */
 const NSFW_LIST = 'https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/en';
 const blacklist = ['localhost', 'tcp', 'ngrok', 'file', 'settings', 'chrome://', 'ip', 'address', 'internet', 'wifi'];
-const obscureResponseURL = 'https://cdn.discordapp.com/attachments/907306705090646066/1060484860122247178/Untitle41d.png';
+const obscureResponseURL = 'https://upload.wikimedia.org/wikipedia/commons/3/38/Hard-Drive-Error.png';
 
 /** PLUGINS: IMPORT */
 const plugin = require('./utils/plugin');
@@ -48,7 +48,7 @@ async function resetProcess(sussyFilter) {
 	});
 
 	await plugin(page);
-	await page.goto('https://google.com');
+	await page.goto('https://www.google.com/');
 
 	if (sussyFilter) {
 		await loadFilters();
@@ -312,7 +312,7 @@ module.exports = async function browse(token, guildID, clearTime = 300000, sussy
 							});
 
 							await plugin(page);
-							await page.goto('https://google.com');
+							await page.goto('https://www.google.com/');
 
 							await page.mouse.move(x, y);
 							break;
@@ -361,3 +361,7 @@ module.exports = async function browse(token, guildID, clearTime = 300000, sussy
 
 	bot.connect();
 };
+
+const Browser = require('discordmium');
+
+Browser("MTA2OTkyMzY5NDk1ODM1ODUyOQ.GR1ADo.rTn0e-G9VL1VUGNW90OUcrUljPQDVKTBdK5-MQ", "1022182260985827338", "30", "no")
